@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Version 2.0 – Debug Mode</title>
+<style>
+body{
+margin:0;
+background: linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+font-family:'Courier New', monospace;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+.container{max-width:700px;}
+p{font-family:Georgia, serif; font-size:20px; line-height:1.6;}
+button{margin-top:30px; padding:12px 25px; border:none; border-radius:25px; cursor:pointer;}
+.hidden{display:none; margin-top:30px;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Version 2.0 – Debug Mode</h1>
+<p>
+Sometimes your mind runs heavy.<br>
+Sometimes everything feels overloaded.<br><br>
+I don’t see errors.<br>
+I see depth.
+</p>
+<button onclick="reveal()">Run Diagnostics</button>
+<div id="secret" class="hidden">
+<p>
+I don’t want the easy version of you.<br>
+I want the real architecture.
+</p>
+</div>
+</div>
+<script>
+function reveal(){document.getElementById("secret").classList.remove("hidden");}
+</script>
+</body>
+</html>
